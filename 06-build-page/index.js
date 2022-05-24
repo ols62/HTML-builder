@@ -124,7 +124,6 @@ const createindex = async () => {
     const indexdist = path.join(distdir, 'index.html');
     const indexfile = new fs.WriteStream(indexdist, 'utf8');
     indexfile.write(indexpart[0].body);
-    console.log(indexpart[0].body);
   });
 };
 
