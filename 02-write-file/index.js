@@ -15,7 +15,7 @@ process.on('SIGINT', () => {
 process.on('exit', () => {
   readln.close();
   file.destroy();
-  console.log('The program has stopped. Goodbye!');
+  console.log('\r\nThe program has stopped. Goodbye!');
 });
 
 process.stdin.on('data', (text) => {
